@@ -49,7 +49,7 @@ This page contains simple guidelines to follow, when you are writing Javascript.
     ```
   - Above primitive data type values are accessed directly without any reference. 
 
-  - **Other datatypes**: Other datatypes such as object, array are accessed by a reference
+  - **Other datatypes**: such as object, array are accessed by its reference
 
     + `object`
     + `array`
@@ -116,9 +116,11 @@ This page contains simple guidelines to follow, when you are writing Javascript.
   - Add a new item to an array
     ```javascript
     bar.push(2); //adds a new item to an array
+
+    console.log(bar); //print [1, 2]
     ```
 
-  -- Get the length of an array
+  - Get the length of an array
 
   ```javascript
     var bar = [1, 2, 'hello'];
@@ -129,7 +131,7 @@ This page contains simple guidelines to follow, when you are writing Javascript.
 **[⬆ back to top](#table-of-contents)**
 
 
-# Other contents coming soon
+# More contents are coming soon
 
 
 
