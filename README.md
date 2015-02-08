@@ -4,18 +4,17 @@ This page contains simple guidelines to follow, when you are writing Javascript.
 
 ## Table of contents
 
-1. Comments (#comments)
-1. Types (Primitives) (#types)
-1. Objects (#objects)
-1. Arrays (#arrays)
-1. Strings (#strings)
-1. Alert & console.log (#alert and console.log)
-1. Functions (#functions)
-1. Conditional Statements (#conditional stmt)
-1. Loops (#loops)
-1. Callbacks (#callbacks)
-1. Prototypes (#prototypes)
-1. Naming Convention (#naming conventions)
+1. [Comments] (#comments)
+1. [Types (Primitives)] (#types)
+1. [Objects] (#objects)
+1. [Arrays] (#arrays)
+1. [Strings] (#strings)
+1. [Functions] (#functions)
+1. [Conditional Statements] (#conditional stmt)
+1. [Loops] (#loops)
+1. [Callbacks] (#callbacks)
+1. [Prototypes] (#prototypes)
+1. [Naming Convention] (#naming conventions)
 
 
 ## comments
@@ -126,6 +125,13 @@ This page contains simple guidelines to follow, when you are writing Javascript.
 
     console.log(bar.length); //print 3
   ```
+
+**[⬆ back to top](#table-of-contents)**
+
+
+# Other contents coming soon
+
+
 
 License
 ----
