@@ -1,6 +1,6 @@
 # Javascript basics and guidelines
 
-This page contains simple guidelines to follow, when you are writing Javascript.
+This page also contains simple guidelines to follow, when you are writing Javascript.
 
 ## Table of contents
 
@@ -115,19 +115,44 @@ This page contains simple guidelines to follow, when you are writing Javascript.
 
   - Add a new item to an array
     ```javascript
-    bar.push(2); //adds a new item to an array
+    var bar = [1];
+    bar.push(2); //adds 2 at the end of an array
 
     console.log(bar); //print [1, 2]
     ```
 
-  - Get the length of an array
+    - Add a new item at start of an array
+    
+    ```javascript
+    var bar = [1];
+    bar.unshift(2); //adds 2 before 1
 
+    console.log(bar); //print [2, 1]
+    ```
+  
+    - Remove an item at the end of an array
+    ```javascript
+    var bar = [2, 1, 2];
+    bar.shift(2); //removes 2 from the start
+
+    console.log(bar); //print [1, 2]
+    ```
+
+    - Remove an item at start of an array
+    ```javascript
+    var bar = [2, 1, 2];
+    bar.pop(2); //removes 2 from the end
+
+    console.log(bar); //print [2, 1]
+    ```
+
+  - Get the length of an array
   ```javascript
     var bar = [1, 2, 'hello'];
 
     console.log(bar.length); //print 3
   ```
-
+  
 **[⬆ back to top](#table-of-contents)**
 
 
