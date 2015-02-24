@@ -4,13 +4,13 @@ This page also contains simple guidelines to follow, when you are writing Javasc
 
 ## Table of contents
 
-1. [Comments] (#Tomments)
-1. [Types (Primitives)] (#types)
-1. [Arrays] (#Arrays)
-1. [Objects] (#Objects)
-1. [Strings] (#Strings and Concatenation)
-1. [Functions] (#Functions)
-1. [Variables] (#Variables)
+1. [Comments] (#comments)
+1. [Types (Primitives)] (#datatypes)
+1. [Arrays] (#arrays)
+1. [Objects] (#objects)
+1. [Strings] (#strings & concatenation)
+1. [Functions] (#functions)
+1. [Variables] (#variables)
 1. [Conditional Statements] (#conditional stmt)
 1. [Loops] (#loops)
 1. [Callbacks] (#callbacks)
@@ -18,7 +18,7 @@ This page also contains simple guidelines to follow, when you are writing Javasc
 1. [Naming Convention] (#naming conventions)
 
 
-## Comments
+## comments
 
   - **comments**: In javascript there are 2 types of comments
 
@@ -34,7 +34,7 @@ This page also contains simple guidelines to follow, when you are writing Javasc
     ```
 **[⬆ back to top](#table-of-contents)**
 
-## Datatypes
+## datatypes
 
   - **Primitive data types**: 
 
@@ -68,7 +68,7 @@ This page also contains simple guidelines to follow, when you are writing Javasc
     ```
 **[⬆ back to top](#table-of-contents)**
 
-## Arrays
+## arrays
 
  - Array creation using literal syntax
 
@@ -129,7 +129,7 @@ This page also contains simple guidelines to follow, when you are writing Javasc
   
 **[⬆ back to top](#table-of-contents)**
 
-## Objects
+## objects
 
  - Object creation using literal syntax
   ```javascript
@@ -140,7 +140,7 @@ This page also contains simple guidelines to follow, when you are writing Javasc
     var obj = {}; //empty object literal
   ```
 
-  - Access an object
+  - Accessing an object
   ```javascript
     var obj = {
       name: 'ABC',
@@ -168,7 +168,7 @@ This page also contains simple guidelines to follow, when you are writing Javasc
   ```
 **[⬆ back to top](#table-of-contents)**
 
-## Strings and Concatenation
+## strings & concatenation
 
   - Using single quote `''` for strings
   ```javascript
@@ -178,14 +178,16 @@ This page also contains simple guidelines to follow, when you are writing Javasc
     //good
     var bar = 'Hello world';
   ```  
+
   - Using `+` to concatenate strings
   ```javascript
     var bar = 'Hi I am ' + 'gokul';
   ```
+
 **[⬆ back to top](#table-of-contents)**
 
 
-## Functions
+## functions
 
   - Function declarations
 
@@ -223,12 +225,13 @@ This page also contains simple guidelines to follow, when you are writing Javasc
 
     ```javascript
     (function () {
-      alert('I am function which is invoked automatically');
+      alert('I am a function which is invoked automatically');
     });
     ```
+
 **[⬆ back to top](#table-of-contents)**
 
-## Variables
+## variables
 
   - Variable creation
   ```javascript
@@ -256,6 +259,7 @@ This page also contains simple guidelines to follow, when you are writing Javasc
 
   funz(); //calling the function
   ```
+
 **[⬆ back to top](#table-of-contents)**
 
 # More contents are coming soon
