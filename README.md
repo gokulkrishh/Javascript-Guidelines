@@ -46,6 +46,7 @@
       var foo = 1; //number
       var bar = 'Hello World'; //string
     ```
+
   - Above primitive data type values are accessed directly without any reference. 
 
   - **Other datatypes**: such as object, array are accessed by its reference
@@ -79,6 +80,7 @@
     ```
   
   - Array starts at index 0
+
     ```javascript
     var bar = [1]; // array starts at index 0
     
@@ -86,6 +88,7 @@
     ```
 
   - Add a new item to an array
+
     ```javascript
     var bar = [1];
     bar.push(2); //adds 2 at the end of an array
@@ -103,6 +106,7 @@
     ```
   
     - Remove an item at the end of an array
+
     ```javascript
     var bar = [2, 1, 2];
     bar.shift(2); //removes 2 from the start
@@ -111,6 +115,7 @@
     ```
 
     - Remove an item at start of an array
+
     ```javascript
     var bar = [2, 1, 2];
     bar.pop(2); //removes 2 from the end
@@ -119,6 +124,7 @@
     ```
 
   - Get the length of an array
+
   ```javascript
     var bar = [1, 2, 'hello'];
 
@@ -130,6 +136,7 @@
 ## objects
 
  - Object creation using literal syntax
+
   ```javascript
     //bad
     var obj = new Object();
@@ -139,6 +146,7 @@
   ```
 
   - Accessing an object
+
   ```javascript
     var obj = {
       name: 'ABC',
@@ -169,6 +177,7 @@
 ## strings
 
   - Using single quote `''` for strings
+
   ```javascript
     //bad
     var bar = "Hello world";
@@ -178,6 +187,7 @@
   ```  
 
   - Using `+` to concatenate strings
+
   ```javascript
     var bar = 'Hi I am ' + 'gokul';
   ```
@@ -232,6 +242,7 @@
 ## variables
 
   - Variable creation
+
   ```javascript
   //bad
   foo = 1; 
@@ -241,6 +252,7 @@
   ```
 
   - local and global variables in functions
+  
   ```javascript
   //global
   var foo = 1; 
