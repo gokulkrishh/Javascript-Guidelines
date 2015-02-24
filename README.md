@@ -168,7 +168,7 @@ This page also contains simple guidelines to follow, when you are writing Javasc
   ```
 **[⬆ back to top](#table-of-contents)**
 
-## strings & concatenation
+## strings
 
   - Using single quote `''` for strings
   ```javascript
