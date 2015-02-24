@@ -1,6 +1,4 @@
-# Javascript basics and guidelines
-
-This page also contains simple guidelines to follow, when you are writing Javascript.
+# Javascript Basics & Guidelines
 
 ## Table of contents
 
