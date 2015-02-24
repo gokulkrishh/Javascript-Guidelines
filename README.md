@@ -252,7 +252,7 @@ This page also contains simple guidelines to follow, when you are writing Javasc
   function funz() {
     var bar = 10; //local variable
     console.log(bar); //print 10
-    foo = 10; //change the global variable value
+    foo = 10; //changing the global variable value 1 to 10
   }
 
   alert(foo); //will alert 10
