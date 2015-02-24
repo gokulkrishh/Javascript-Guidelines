@@ -4,12 +4,13 @@ This page also contains simple guidelines to follow, when you are writing Javasc
 
 ## Table of contents
 
-1. [Comments] (#comments)
+1. [Comments] (#Tomments)
 1. [Types (Primitives)] (#types)
-1. [Objects] (#objects)
-1. [Arrays] (#arrays)
-1. [Strings] (#strings)
-1. [Functions] (#functions)
+1. [Arrays] (#Arrays)
+1. [Objects] (#Objects)
+1. [Strings] (#Strings and Concatenation)
+1. [Functions] (#Functions)
+1. [Variables] (#Variables)
 1. [Conditional Statements] (#conditional stmt)
 1. [Loops] (#loops)
 1. [Callbacks] (#callbacks)
@@ -17,7 +18,7 @@ This page also contains simple guidelines to follow, when you are writing Javasc
 1. [Naming Convention] (#naming conventions)
 
 
-## comments
+## Comments
 
   - **comments**: In javascript there are 2 types of comments
 
@@ -33,7 +34,7 @@ This page also contains simple guidelines to follow, when you are writing Javasc
     ```
 **[⬆ back to top](#table-of-contents)**
 
-## types
+## Datatypes
 
   - **Primitive data types**: 
 
@@ -67,36 +68,9 @@ This page also contains simple guidelines to follow, when you are writing Javasc
     ```
 **[⬆ back to top](#table-of-contents)**
 
-## objects
+## Arrays
 
-  - Do's and dont's in object
-
-    ```javascript
-    //bad and old way
-    var item = new Object();
-
-    //good
-    var item = {}; //object literal
-    ```  
-  
-  - Use better naming convension and don't use [reserved keywords](http://www.w3schools.com/js/js_reserved.asp) such as private, class etc.
-
-    ```javascript
-    //bad
-    var item = {
-      'klass': 'Audi'
-    };
-    
-    //good
-    var item = {
-      'type': 'Audi'
-    };
-    ```  
-  **[⬆ back to top](#table-of-contents)**
-
-## arrays
-
- - Do's & dont's in array 
+ - Array creation using literal syntax
 
     ```javascript
     //Bad
@@ -155,6 +129,134 @@ This page also contains simple guidelines to follow, when you are writing Javasc
   
 **[⬆ back to top](#table-of-contents)**
 
+## Objects
+
+ - Object creation using literal syntax
+  ```javascript
+    //bad
+    var obj = new Object();
+    
+    //good
+    var obj = {}; //empty object literal
+  ```
+
+  - Access an object
+  ```javascript
+    var obj = {
+      name: 'ABC',
+      type: 'Alphabet',
+      id: 123
+    };
+
+    console.log(obj.name); //print ABC
+
+    console.log(obj['name']); //print ABC
+  ```
+
+  - Use better naming convension and don't use [reserved keywords](http://www.w3schools.com/js/js_reserved.asp) such as private, class etc.
+
+  ```javascript
+    //bad
+    var obj = {
+      class: 'car'
+    };
+
+    //good
+    var obj = {
+      type: 'car'
+    };
+  ```
+**[⬆ back to top](#table-of-contents)**
+
+## Strings and Concatenation
+
+  - Using single quote `''` for strings
+  ```javascript
+    //bad
+    var bar = "Hello world";
+
+    //good
+    var bar = 'Hello world';
+  ```  
+  - Using `+` to concatenate strings
+  ```javascript
+    var bar = 'Hi I am ' + 'gokul';
+  ```
+**[⬆ back to top](#table-of-contents)**
+
+
+## Functions
+
+  - Function declarations
+
+  ```javascript
+    function funz(name) {
+      alert('My name is ' + name); //will alert my name is gokul
+    }
+
+    funz('gokul'); //call's the above function with argument
+
+    var newFunz = new funz(); //creates an instance of the function funz
+  ```
+
+  - Function expressions
+
+  ```javascript
+    //anonymous function
+    var funz = function() {
+      alert('I am a function too');
+    };
+
+    funz();
+    
+    //Named function expression
+    var namedFunz = function funz() {
+      alert('I am a function too');
+    };
+
+    namedFunz();
+  ```
+
+  - Immediately invoked function express (IIFE)
+
+    - below function is called automatically
+
+    ```javascript
+    (function () {
+      alert('I am function which is invoked automatically');
+    });
+    ```
+**[⬆ back to top](#table-of-contents)**
+
+## Variables
+
+  - Variable creation
+  ```javascript
+  //bad
+  foo = 1; 
+  
+  //good
+  var foo = 1; //assigns number 1 to the variable foo
+  ```
+
+  - local and global variables in functions
+  ```javascript
+  //global
+  var foo = 1; 
+
+  alert(foo); //will alert 1
+
+  function funz() {
+    var bar = 10; //local variable
+    console.log(bar); //print 10
+    foo = 10; //change the global variable value
+  }
+
+  alert(foo); //will alert 10
+
+  funz(); //calling the function
+  ```
+**[⬆ back to top](#table-of-contents)**
 
 # More contents are coming soon
 
