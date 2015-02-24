@@ -8,7 +8,7 @@ This page also contains simple guidelines to follow, when you are writing Javasc
 1. [Types (Primitives)] (#datatypes)
 1. [Arrays] (#arrays)
 1. [Objects] (#objects)
-1. [Strings] (#strings & concatenation)
+1. [Strings] (#strings)
 1. [Functions] (#functions)
 1. [Variables] (#variables)
 1. [Conditional Statements] (#conditional stmt)
