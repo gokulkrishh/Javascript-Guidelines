@@ -9,11 +9,10 @@
 1. [Strings] (#strings)
 1. [Functions] (#functions)
 1. [Variables] (#variables)
-1. [Conditional Statements] (#conditional stmt)
+1. [Conditional Statements] (#conditional statements)
+1. [Comparison Operators] (#comparison operators)
 1. [Loops] (#loops)
-1. [Callbacks] (#callbacks)
 1. [Prototypes] (#prototypes)
-1. [Naming Convention] (#naming conventions)
 
 
 ## comments
@@ -271,6 +270,163 @@
   ```
 
 **[⬆ back to top](#table-of-contents)**
+
+## conditional statements
+
+- If, Else if, Else Statement
+  
+  ```javascript
+  var a = false;
+  var b = true;
+
+  //If the below condition is true, call alert()
+  if (a) {
+    alert('I am a if statement');
+  }
+  else if (b) {
+    alert('I am else if statement'); //Will alert because b == true
+  }
+  else {
+    alert('I am else statement');
+  }
+  ```  
+
+**[⬆ back to top](#table-of-contents)**
+
+## comparison operators
+
+- Always use `===` instead of `==` and `!==` instead of `!=`
+
+- Difference is that `===` and `!==` will also check the type of the variable, See below example
+
+
+  ```javascript
+  var foo = 1;
+  var bar = '1';
+  
+  console.log(foo == 1); //True, because `==` will do automatic type conversion
+
+  console.log(bar === 1); //False, because 1 === '1'
+
+  console.log(bar === '1'); //True
+
+  console.log(bar !== 1); //True , '1' is not equal value as well as type
+
+  ```
+
+## loops
+
+ - for, for/in, while, do/while loop
+
+  -- for loop
+
+  ```javascript
+  for (statement 1; statement 2; statement 3) {
+    
+  }
+
+  //statement 1 - Executes before the loop
+  //statement 2 - Condition to run the loop
+  //statement 3 - Executes each time after the loop
+
+  //See below for example
+
+  for (var i = 0; i < 10; i++) {
+    console.log(i); //Will print from 0 to 9
+  }
+  
+  ```
+
+  -- for/in loop to loop through an array or object
+
+  ```javascript
+
+  for (var x in array or object)  {
+  
+  }
+
+  //Looping through an array
+  var foo = [1, 2, 3, 4, 5];
+
+  for (var i in foo) {
+    console.log(foo[i]); //Will loop the array and prints 1 to 5
+  }
+  
+  //Looping through an object
+  var obj = [{ name : 'gokul'}, {name : 'krishh'}];
+
+  for (var name in obj) { 
+
+    //To check property belongs to object, not to prototype object
+    //hasOwnProperty is only to check objects
+    
+    if (obj.hasOwnProperty(name)) {
+      console.log(obj[name]); //Will print {name: "gokul"}, {name: "krishh"}
+    }
+
+  }
+
+  ```  
+
+  -- while loop
+
+
+  ```javascript
+  while (statement 1) {
+    
+  }
+
+  //statement 1 - Condition to run the loop
+  //See below for example
+
+  var i = 0;
+
+  while (i < 10) {
+    i++; //Increment i
+    console.log(i); //Will print from 1 to 10
+  }
+  
+  ```
+
+  -- do/while loop will execute once, before checking the condition in while
+
+
+  ```javascript
+  do {
+    //Execute once before checking while condition
+  } while(statement 1)
+
+  //statement 1 - Condition to run the loop
+  //See below for example
+
+  var i = 0;
+
+  do {
+    console.log(i); //Will print from 0 to 10
+    i++; //Increment i
+  } while (i < 10) 
+  
+  ```
+
+**[⬆ back to top](#table-of-contents)**
+
+## prototypes
+
+  - In javascript function, array, objects are considered as objects
+  - All objects in js inherit, properties and methods from the prototype
+
+  ```javascript
+  function person(name, age) {
+    this.name = name;
+    this.age  = age;
+    console.log(this.model);
+  }
+  
+  person.prototype.model = 'Car'; //Addind model to prototype
+
+  var newPerson = new person('Gokul', 23);
+
+  ```
 
 # More contents are coming soon
 
