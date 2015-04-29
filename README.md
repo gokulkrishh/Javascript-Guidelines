@@ -40,6 +40,7 @@
     +  `boolean (true or false)`
     +  `undefined`
     +  `null`
+	<br>
 
     ```javascript
       var foo = 1; //number
@@ -96,6 +97,7 @@
     ```
 
     - Add a new item at start of an array
+    <br>
     
     ```javascript
     var bar = [1];
@@ -105,6 +107,7 @@
     ```
   
     - Remove an item at the end of an array
+	<br>
 
     ```javascript
     var bar = [2, 1, 2];
@@ -114,6 +117,7 @@
     ```
 
     - Remove an item at start of an array
+	<br>
 
     ```javascript
     var bar = [2, 1, 2];
@@ -428,8 +432,13 @@
 
   ```
 
-# More contents are coming soon
+#### More contents are coming soon...
 
+# Contribution
+
+ If contents above need to be improved or if you want to add more content. Feel free to give me pull request.
+
+ Thanks!!
 
 
 License
