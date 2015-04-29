@@ -1,37 +1,25 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en-us">
   <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="Javascript Guidelines : Javascript basics &amp; Guidelines">
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>Javascript Guidelines</title>
+    <meta charset="UTF-8">
+    <title>Javascript Guidelines by gokulkrishh</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
   </head>
-
   <body>
+    <section class="page-header">
+      <h1 class="project-name">Javascript Guidelines</h1>
+      <h2 class="project-tagline">Javascript basics &amp; Guidelines</h2>
+      <a href="https://github.com/gokulkrishh/Javascript-Guidelines" class="btn">View on GitHub</a>
+      <a href="https://github.com/gokulkrishh/Javascript-Guidelines/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/gokulkrishh/Javascript-Guidelines/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/gokulkrishh/Javascript-Guidelines">View on GitHub</a>
-
-          <h1 id="project_title">Javascript Guidelines</h1>
-          <h2 id="project_tagline">Javascript basics &amp; Guidelines</h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/gokulkrishh/Javascript-Guidelines/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/gokulkrishh/Javascript-Guidelines/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h1>
+    <section class="main-content">
+      <h1>
 <a id="javascript-basics--guidelines" class="anchor" href="#javascript-basics--guidelines" aria-hidden="true"><span class="octicon octicon-link"></span></a>Javascript Basics &amp; Guidelines</h1>
 
 <h2>
@@ -45,11 +33,10 @@
 <li><a href="#strings">Strings</a></li>
 <li><a href="#functions">Functions</a></li>
 <li><a href="#variables">Variables</a></li>
-<li><a href="#conditional%20stmt">Conditional Statements</a></li>
+<li><a href="#conditional%20statements">Conditional Statements</a></li>
+<li><a href="#comparison%20operators">Comparison Operators</a></li>
 <li><a href="#loops">Loops</a></li>
-<li><a href="#callbacks">Callbacks</a></li>
 <li><a href="#prototypes">Prototypes</a></li>
-<li><a href="#naming%20conventions">Naming Convention</a></li>
 </ol>
 
 <h2>
@@ -94,8 +81,8 @@
 </li>
 </ul>
 
-<div class="highlight highlight-javascript"><pre>  <span class="pl-s">var</span> foo <span class="pl-k">=</span> <span class="pl-c1">1</span>; <span class="pl-c">//number</span>
-  <span class="pl-s">var</span> bar <span class="pl-k">=</span> <span class="pl-s1"><span class="pl-pds">'</span>Hello World<span class="pl-pds">'</span></span>; <span class="pl-c">//string</span></pre></div>
+<div class="highlight highlight-javascript"><pre>  <span class="pl-k">var</span> foo <span class="pl-k">=</span> <span class="pl-c1">1</span>; <span class="pl-c">//number</span>
+  <span class="pl-k">var</span> bar <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">'</span>Hello World<span class="pl-pds">'</span></span>; <span class="pl-c">//string</span></pre></div>
 </li>
 <li><p>Above primitive data type values are accessed directly without any reference. </p></li>
 <li>
@@ -106,15 +93,15 @@
 <li><code>array</code></li>
 </ul>
 
-<div class="highlight highlight-javascript"><pre>  <span class="pl-s">var</span> foo <span class="pl-k">=</span> [<span class="pl-c1">1</span>, <span class="pl-s1"><span class="pl-pds">'</span>hello<span class="pl-pds">'</span></span>]; <span class="pl-c">//array</span>
+<div class="highlight highlight-javascript"><pre>  <span class="pl-k">var</span> foo <span class="pl-k">=</span> [<span class="pl-c1">1</span>, <span class="pl-s"><span class="pl-pds">'</span>hello<span class="pl-pds">'</span></span>]; <span class="pl-c">//array</span>
 
   foo[<span class="pl-c1">0</span>] <span class="pl-k">=</span> <span class="pl-c1">1</span>; <span class="pl-c">//accessing array value by its reference</span>
 
-  <span class="pl-s">var</span> bar <span class="pl-k">=</span> {
-    name<span class="pl-k">:</span> <span class="pl-s1"><span class="pl-pds">'</span>Hello World<span class="pl-pds">'</span></span> 
+  <span class="pl-k">var</span> bar <span class="pl-k">=</span> {
+    name<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>Hello World<span class="pl-pds">'</span></span> 
   }; <span class="pl-c">//object</span>
 
-  bar.<span class="pl-sc">name</span> <span class="pl-k">=</span> <span class="pl-s1"><span class="pl-pds">'</span>Hello World<span class="pl-pds">'</span></span>; <span class="pl-c">//accessing object by its reference</span></pre></div>
+  bar.<span class="pl-c1">name</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">'</span>Hello World<span class="pl-pds">'</span></span>; <span class="pl-c">//accessing object by its reference</span></pre></div>
 
 <p><strong><a href="#table-of-contents">⬆ back to top</a></strong></p>
 </li>
@@ -128,60 +115,60 @@
 <p>Array creation using literal syntax</p>
 
 <div class="highlight highlight-javascript"><pre><span class="pl-c">//Bad</span>
-<span class="pl-s">var</span> foo <span class="pl-k">=</span> New <span class="pl-s3">Array</span>();
+<span class="pl-k">var</span> foo <span class="pl-k">=</span> New <span class="pl-c1">Array</span>();
 
 <span class="pl-c">//Good</span>
-<span class="pl-s">var</span> foo <span class="pl-k">=</span> []; <span class="pl-c">//array literal</span></pre></div>
+<span class="pl-k">var</span> foo <span class="pl-k">=</span> []; <span class="pl-c">//array literal</span></pre></div>
 
 <ul>
 <li>
 <p>Array starts at index 0</p>
 
-<div class="highlight highlight-javascript"><pre><span class="pl-s">var</span> bar <span class="pl-k">=</span> [<span class="pl-c1">1</span>]; <span class="pl-c">// array starts at index 0</span>
+<div class="highlight highlight-javascript"><pre><span class="pl-k">var</span> bar <span class="pl-k">=</span> [<span class="pl-c1">1</span>]; <span class="pl-c">// array starts at index 0</span>
 
-<span class="pl-en">console</span><span class="pl-s3">.log</span>(bar[<span class="pl-c1">0</span>]); <span class="pl-c">//print 1</span></pre></div>
+<span class="pl-en">console</span><span class="pl-c1">.log</span>(bar[<span class="pl-c1">0</span>]); <span class="pl-c">//print 1</span></pre></div>
 </li>
 <li>
 <p>Add a new item to an array</p>
 
-<div class="highlight highlight-javascript"><pre><span class="pl-s">var</span> bar <span class="pl-k">=</span> [<span class="pl-c1">1</span>];
-bar.<span class="pl-s3">push</span>(<span class="pl-c1">2</span>); <span class="pl-c">//adds 2 at the end of an array</span>
+<div class="highlight highlight-javascript"><pre><span class="pl-k">var</span> bar <span class="pl-k">=</span> [<span class="pl-c1">1</span>];
+bar.<span class="pl-c1">push</span>(<span class="pl-c1">2</span>); <span class="pl-c">//adds 2 at the end of an array</span>
 
-<span class="pl-en">console</span><span class="pl-s3">.log</span>(bar); <span class="pl-c">//print [1, 2]</span></pre></div>
+<span class="pl-en">console</span><span class="pl-c1">.log</span>(bar); <span class="pl-c">//print [1, 2]</span></pre></div>
 
 <ul>
 <li>Add a new item at start of an array</li>
 </ul>
 
-<div class="highlight highlight-javascript"><pre><span class="pl-s">var</span> bar <span class="pl-k">=</span> [<span class="pl-c1">1</span>];
-bar.<span class="pl-s3">unshift</span>(<span class="pl-c1">2</span>); <span class="pl-c">//adds 2 before 1</span>
+<div class="highlight highlight-javascript"><pre><span class="pl-k">var</span> bar <span class="pl-k">=</span> [<span class="pl-c1">1</span>];
+bar.<span class="pl-c1">unshift</span>(<span class="pl-c1">2</span>); <span class="pl-c">//adds 2 before 1</span>
 
-<span class="pl-en">console</span><span class="pl-s3">.log</span>(bar); <span class="pl-c">//print [2, 1]</span></pre></div>
+<span class="pl-en">console</span><span class="pl-c1">.log</span>(bar); <span class="pl-c">//print [2, 1]</span></pre></div>
 
 <ul>
 <li>Remove an item at the end of an array</li>
 </ul>
 
-<div class="highlight highlight-javascript"><pre><span class="pl-s">var</span> bar <span class="pl-k">=</span> [<span class="pl-c1">2</span>, <span class="pl-c1">1</span>, <span class="pl-c1">2</span>];
-bar.<span class="pl-s3">shift</span>(<span class="pl-c1">2</span>); <span class="pl-c">//removes 2 from the start</span>
+<div class="highlight highlight-javascript"><pre><span class="pl-k">var</span> bar <span class="pl-k">=</span> [<span class="pl-c1">2</span>, <span class="pl-c1">1</span>, <span class="pl-c1">2</span>];
+bar.<span class="pl-c1">shift</span>(<span class="pl-c1">2</span>); <span class="pl-c">//removes 2 from the start</span>
 
-<span class="pl-en">console</span><span class="pl-s3">.log</span>(bar); <span class="pl-c">//print [1, 2]</span></pre></div>
+<span class="pl-en">console</span><span class="pl-c1">.log</span>(bar); <span class="pl-c">//print [1, 2]</span></pre></div>
 
 <ul>
 <li>Remove an item at start of an array</li>
 </ul>
 
-<div class="highlight highlight-javascript"><pre><span class="pl-s">var</span> bar <span class="pl-k">=</span> [<span class="pl-c1">2</span>, <span class="pl-c1">1</span>, <span class="pl-c1">2</span>];
-bar.<span class="pl-s3">pop</span>(<span class="pl-c1">2</span>); <span class="pl-c">//removes 2 from the end</span>
+<div class="highlight highlight-javascript"><pre><span class="pl-k">var</span> bar <span class="pl-k">=</span> [<span class="pl-c1">2</span>, <span class="pl-c1">1</span>, <span class="pl-c1">2</span>];
+bar.<span class="pl-c1">pop</span>(<span class="pl-c1">2</span>); <span class="pl-c">//removes 2 from the end</span>
 
-<span class="pl-en">console</span><span class="pl-s3">.log</span>(bar); <span class="pl-c">//print [2, 1]</span></pre></div>
+<span class="pl-en">console</span><span class="pl-c1">.log</span>(bar); <span class="pl-c">//print [2, 1]</span></pre></div>
 </li>
 <li><p>Get the length of an array</p></li>
 </ul>
 
-<div class="highlight highlight-javascript"><pre>  <span class="pl-s">var</span> bar <span class="pl-k">=</span> [<span class="pl-c1">1</span>, <span class="pl-c1">2</span>, <span class="pl-s1"><span class="pl-pds">'</span>hello<span class="pl-pds">'</span></span>];
+<div class="highlight highlight-javascript"><pre>  <span class="pl-k">var</span> bar <span class="pl-k">=</span> [<span class="pl-c1">1</span>, <span class="pl-c1">2</span>, <span class="pl-s"><span class="pl-pds">'</span>hello<span class="pl-pds">'</span></span>];
 
-  <span class="pl-en">console</span><span class="pl-s3">.log</span>(bar.<span class="pl-sc">length</span>); <span class="pl-c">//print 3</span></pre></div>
+  <span class="pl-en">console</span><span class="pl-c1">.log</span>(bar.<span class="pl-c1">length</span>); <span class="pl-c">//print 3</span></pre></div>
 </li>
 </ul>
 
@@ -195,37 +182,37 @@ bar.<span class="pl-s3">pop</span>(<span class="pl-c1">2</span>); <span class="p
 <p>Object creation using literal syntax</p>
 
 <div class="highlight highlight-javascript"><pre>  <span class="pl-c">//bad</span>
-  <span class="pl-s">var</span> obj <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-en">Object</span>();
+  <span class="pl-k">var</span> obj <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-en">Object</span>();
 
   <span class="pl-c">//good</span>
-  <span class="pl-s">var</span> obj <span class="pl-k">=</span> {}; <span class="pl-c">//empty object literal</span></pre></div>
+  <span class="pl-k">var</span> obj <span class="pl-k">=</span> {}; <span class="pl-c">//empty object literal</span></pre></div>
 
 <ul>
 <li>Accessing an object</li>
 </ul>
 
-<div class="highlight highlight-javascript"><pre>  <span class="pl-s">var</span> obj <span class="pl-k">=</span> {
-    name<span class="pl-k">:</span> <span class="pl-s1"><span class="pl-pds">'</span>ABC<span class="pl-pds">'</span></span>,
-    type<span class="pl-k">:</span> <span class="pl-s1"><span class="pl-pds">'</span>Alphabet<span class="pl-pds">'</span></span>,
+<div class="highlight highlight-javascript"><pre>  <span class="pl-k">var</span> obj <span class="pl-k">=</span> {
+    name<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>ABC<span class="pl-pds">'</span></span>,
+    type<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>Alphabet<span class="pl-pds">'</span></span>,
     id<span class="pl-k">:</span> <span class="pl-c1">123</span>
   };
 
-  <span class="pl-en">console</span><span class="pl-s3">.log</span>(obj.<span class="pl-sc">name</span>); <span class="pl-c">//print ABC</span>
+  <span class="pl-en">console</span><span class="pl-c1">.log</span>(obj.<span class="pl-c1">name</span>); <span class="pl-c">//print ABC</span>
 
-  <span class="pl-en">console</span><span class="pl-s3">.log</span>(obj[<span class="pl-s1"><span class="pl-pds">'</span>name<span class="pl-pds">'</span></span>]); <span class="pl-c">//print ABC</span></pre></div>
+  <span class="pl-en">console</span><span class="pl-c1">.log</span>(obj[<span class="pl-s"><span class="pl-pds">'</span>name<span class="pl-pds">'</span></span>]); <span class="pl-c">//print ABC</span></pre></div>
 
 <ul>
 <li>Use better naming convension and don't use <a href="http://www.w3schools.com/js/js_reserved.asp">reserved keywords</a> such as private, class etc.</li>
 </ul>
 
 <div class="highlight highlight-javascript"><pre>  <span class="pl-c">//bad</span>
-  <span class="pl-s">var</span> obj <span class="pl-k">=</span> {
-    class<span class="pl-k">:</span> <span class="pl-s1"><span class="pl-pds">'</span>car<span class="pl-pds">'</span></span>
+  <span class="pl-k">var</span> obj <span class="pl-k">=</span> {
+    class<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>car<span class="pl-pds">'</span></span>
   };
 
   <span class="pl-c">//good</span>
-  <span class="pl-s">var</span> obj <span class="pl-k">=</span> {
-    type<span class="pl-k">:</span> <span class="pl-s1"><span class="pl-pds">'</span>car<span class="pl-pds">'</span></span>
+  <span class="pl-k">var</span> obj <span class="pl-k">=</span> {
+    type<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>car<span class="pl-pds">'</span></span>
   };</pre></div>
 
 <p><strong><a href="#table-of-contents">⬆ back to top</a></strong></p>
@@ -240,15 +227,15 @@ bar.<span class="pl-s3">pop</span>(<span class="pl-c1">2</span>); <span class="p
 <p>Using single quote <code>''</code> for strings</p>
 
 <div class="highlight highlight-javascript"><pre>  <span class="pl-c">//bad</span>
-  <span class="pl-s">var</span> bar <span class="pl-k">=</span> <span class="pl-s1"><span class="pl-pds">"</span>Hello world<span class="pl-pds">"</span></span>;
+  <span class="pl-k">var</span> bar <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>Hello world<span class="pl-pds">"</span></span>;
 
   <span class="pl-c">//good</span>
-  <span class="pl-s">var</span> bar <span class="pl-k">=</span> <span class="pl-s1"><span class="pl-pds">'</span>Hello world<span class="pl-pds">'</span></span>;</pre></div>
+  <span class="pl-k">var</span> bar <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">'</span>Hello world<span class="pl-pds">'</span></span>;</pre></div>
 </li>
 <li>
 <p>Using <code>+</code> to concatenate strings</p>
 
-<div class="highlight highlight-javascript"><pre>  <span class="pl-s">var</span> bar <span class="pl-k">=</span> <span class="pl-s1"><span class="pl-pds">'</span>Hi I am <span class="pl-pds">'</span></span> <span class="pl-k">+</span> <span class="pl-s1"><span class="pl-pds">'</span>gokul<span class="pl-pds">'</span></span>;</pre></div>
+<div class="highlight highlight-javascript"><pre>  <span class="pl-k">var</span> bar <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">'</span>Hi I am <span class="pl-pds">'</span></span> <span class="pl-k">+</span> <span class="pl-s"><span class="pl-pds">'</span>gokul<span class="pl-pds">'</span></span>;</pre></div>
 </li>
 </ul>
 
@@ -261,27 +248,27 @@ bar.<span class="pl-s3">pop</span>(<span class="pl-c1">2</span>); <span class="p
 <li>
 <p>Function declarations</p>
 
-<div class="highlight highlight-javascript"><pre>  <span class="pl-st">function</span> <span class="pl-en">funz</span>(<span class="pl-vpf">name</span>) {
-    <span class="pl-s3">alert</span>(<span class="pl-s1"><span class="pl-pds">'</span>My name is <span class="pl-pds">'</span></span> <span class="pl-k">+</span> name); <span class="pl-c">//will alert my name is gokul</span>
+<div class="highlight highlight-javascript"><pre>  <span class="pl-k">function</span> <span class="pl-en">funz</span>(<span class="pl-smi">name</span>) {
+    <span class="pl-c1">alert</span>(<span class="pl-s"><span class="pl-pds">'</span>My name is <span class="pl-pds">'</span></span> <span class="pl-k">+</span> name); <span class="pl-c">//will alert my name is gokul</span>
   }
 
-  funz(<span class="pl-s1"><span class="pl-pds">'</span>gokul<span class="pl-pds">'</span></span>); <span class="pl-c">//call's the above function with argument</span>
+  funz(<span class="pl-s"><span class="pl-pds">'</span>gokul<span class="pl-pds">'</span></span>); <span class="pl-c">//call's the above function with argument</span>
 
-  <span class="pl-s">var</span> newFunz <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-en">funz</span>(); <span class="pl-c">//creates an instance of the function funz</span></pre></div>
+  <span class="pl-k">var</span> newFunz <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-en">funz</span>(); <span class="pl-c">//creates an instance of the function funz</span></pre></div>
 </li>
 <li>
 <p>Function expressions</p>
 
 <div class="highlight highlight-javascript"><pre>  <span class="pl-c">//anonymous function</span>
-  <span class="pl-s">var</span> <span class="pl-en">funz</span> <span class="pl-k">=</span> <span class="pl-st">function</span>() {
-    <span class="pl-s3">alert</span>(<span class="pl-s1"><span class="pl-pds">'</span>I am a function too<span class="pl-pds">'</span></span>);
+  <span class="pl-k">var</span> <span class="pl-en">funz</span> <span class="pl-k">=</span> <span class="pl-k">function</span>() {
+    <span class="pl-c1">alert</span>(<span class="pl-s"><span class="pl-pds">'</span>I am a function too<span class="pl-pds">'</span></span>);
   };
 
   funz();
 
   <span class="pl-c">//Named function expression</span>
-  <span class="pl-s">var</span> namedFunz <span class="pl-k">=</span> <span class="pl-st">function</span> <span class="pl-en">funz</span>() {
-    <span class="pl-s3">alert</span>(<span class="pl-s1"><span class="pl-pds">'</span>I am a function too<span class="pl-pds">'</span></span>);
+  <span class="pl-k">var</span> <span class="pl-en">namedFunz</span> <span class="pl-k">=</span> <span class="pl-k">function</span> <span class="pl-en">funz</span>() {
+    <span class="pl-c1">alert</span>(<span class="pl-s"><span class="pl-pds">'</span>I am a function too<span class="pl-pds">'</span></span>);
   };
 
   namedFunz();</pre></div>
@@ -293,8 +280,8 @@ bar.<span class="pl-s3">pop</span>(<span class="pl-c1">2</span>); <span class="p
 <li>below function is called automatically</li>
 </ul>
 
-<div class="highlight highlight-javascript"><pre>(<span class="pl-st">function</span> () {
-  <span class="pl-s3">alert</span>(<span class="pl-s1"><span class="pl-pds">'</span>I am a function which is invoked automatically<span class="pl-pds">'</span></span>);
+<div class="highlight highlight-javascript"><pre>(<span class="pl-k">function</span> () {
+  <span class="pl-c1">alert</span>(<span class="pl-s"><span class="pl-pds">'</span>I am a function which is invoked automatically<span class="pl-pds">'</span></span>);
 });</pre></div>
 </li>
 </ul>
@@ -312,29 +299,188 @@ bar.<span class="pl-s3">pop</span>(<span class="pl-c1">2</span>); <span class="p
 foo <span class="pl-k">=</span> <span class="pl-c1">1</span>; 
 
 <span class="pl-c">//good</span>
-<span class="pl-s">var</span> foo <span class="pl-k">=</span> <span class="pl-c1">1</span>; <span class="pl-c">//assigns number 1 to the variable foo</span></pre></div>
+<span class="pl-k">var</span> foo <span class="pl-k">=</span> <span class="pl-c1">1</span>; <span class="pl-c">//assigns number 1 to the variable foo</span></pre></div>
 </li>
 <li>
 <p>local and global variables in functions</p>
 
 <div class="highlight highlight-javascript"><pre><span class="pl-c">//global</span>
-<span class="pl-s">var</span> foo <span class="pl-k">=</span> <span class="pl-c1">1</span>; 
+<span class="pl-k">var</span> foo <span class="pl-k">=</span> <span class="pl-c1">1</span>; 
 
-<span class="pl-s3">alert</span>(foo); <span class="pl-c">//will alert 1</span>
+<span class="pl-c1">alert</span>(foo); <span class="pl-c">//will alert 1</span>
 
-<span class="pl-st">function</span> <span class="pl-en">funz</span>() {
-  <span class="pl-s">var</span> bar <span class="pl-k">=</span> <span class="pl-c1">10</span>; <span class="pl-c">//local variable</span>
-  <span class="pl-en">console</span><span class="pl-s3">.log</span>(bar); <span class="pl-c">//print 10</span>
+<span class="pl-k">function</span> <span class="pl-en">funz</span>() {
+  <span class="pl-k">var</span> bar <span class="pl-k">=</span> <span class="pl-c1">10</span>; <span class="pl-c">//local variable</span>
+  <span class="pl-en">console</span><span class="pl-c1">.log</span>(bar); <span class="pl-c">//print 10</span>
   foo <span class="pl-k">=</span> <span class="pl-c1">10</span>; <span class="pl-c">//changing the global variable value 1 to 10</span>
 }
 
-<span class="pl-s3">alert</span>(foo); <span class="pl-c">//will alert 10</span>
+<span class="pl-c1">alert</span>(foo); <span class="pl-c">//will alert 10</span>
 
 funz(); <span class="pl-c">//calling the function</span></pre></div>
 </li>
 </ul>
 
 <p><strong><a href="#table-of-contents">⬆ back to top</a></strong></p>
+
+<h2>
+<a id="conditional-statements" class="anchor" href="#conditional-statements" aria-hidden="true"><span class="octicon octicon-link"></span></a>conditional statements</h2>
+
+<ul>
+<li>
+<p>If, Else if, Else Statement</p>
+
+<div class="highlight highlight-javascript"><pre><span class="pl-k">var</span> a <span class="pl-k">=</span> <span class="pl-c1">false</span>;
+<span class="pl-k">var</span> b <span class="pl-k">=</span> <span class="pl-c1">true</span>;
+
+<span class="pl-c">//If the below condition is true, call alert()</span>
+<span class="pl-k">if</span> (a) {
+  <span class="pl-c1">alert</span>(<span class="pl-s"><span class="pl-pds">'</span>I am a if statement<span class="pl-pds">'</span></span>);
+}
+<span class="pl-k">else</span> <span class="pl-k">if</span> (b) {
+  <span class="pl-c1">alert</span>(<span class="pl-s"><span class="pl-pds">'</span>I am else if statement<span class="pl-pds">'</span></span>); <span class="pl-c">//Will alert because b == true</span>
+}
+<span class="pl-k">else</span> {
+  <span class="pl-c1">alert</span>(<span class="pl-s"><span class="pl-pds">'</span>I am else statement<span class="pl-pds">'</span></span>);
+}</pre></div>
+</li>
+</ul>
+
+<p><strong><a href="#table-of-contents">⬆ back to top</a></strong></p>
+
+<h2>
+<a id="comparison-operators" class="anchor" href="#comparison-operators" aria-hidden="true"><span class="octicon octicon-link"></span></a>comparison operators</h2>
+
+<ul>
+<li><p>Always use <code>===</code> instead of <code>==</code> and <code>!==</code> instead of <code>!=</code></p></li>
+<li>
+<p>Difference is that <code>===</code> and <code>!==</code> will also check the type of the variable, See below example</p>
+
+<div class="highlight highlight-javascript"><pre><span class="pl-k">var</span> foo <span class="pl-k">=</span> <span class="pl-c1">1</span>;
+<span class="pl-k">var</span> bar <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">'</span>1<span class="pl-pds">'</span></span>;
+
+<span class="pl-en">console</span><span class="pl-c1">.log</span>(foo <span class="pl-k">==</span> <span class="pl-c1">1</span>); <span class="pl-c">//True, because `==` will do automatic type conversion</span>
+
+<span class="pl-en">console</span><span class="pl-c1">.log</span>(bar <span class="pl-k">===</span> <span class="pl-c1">1</span>); <span class="pl-c">//False, because 1 === '1'</span>
+
+<span class="pl-en">console</span><span class="pl-c1">.log</span>(bar <span class="pl-k">===</span> <span class="pl-s"><span class="pl-pds">'</span>1<span class="pl-pds">'</span></span>); <span class="pl-c">//True</span>
+
+<span class="pl-en">console</span><span class="pl-c1">.log</span>(bar <span class="pl-k">!==</span> <span class="pl-c1">1</span>); <span class="pl-c">//True , '1' is not equal value as well as type</span>
+</pre></div>
+</li>
+</ul>
+
+<h2>
+<a id="loops" class="anchor" href="#loops" aria-hidden="true"><span class="octicon octicon-link"></span></a>loops</h2>
+
+<ul>
+<li>
+<p>for, for/in, while, do/while loop</p>
+
+<p>-- for loop</p>
+
+<div class="highlight highlight-javascript"><pre><span class="pl-k">for</span> (statement <span class="pl-c1">1</span>; statement <span class="pl-c1">2</span>; statement <span class="pl-c1">3</span>) {
+
+}
+
+<span class="pl-c">//statement 1 - Executes before the loop</span>
+<span class="pl-c">//statement 2 - Condition to run the loop</span>
+<span class="pl-c">//statement 3 - Executes each time after the loop</span>
+
+<span class="pl-c">//See below for example</span>
+
+<span class="pl-k">for</span> (<span class="pl-k">var</span> i <span class="pl-k">=</span> <span class="pl-c1">0</span>; i <span class="pl-k">&lt;</span> <span class="pl-c1">10</span>; i<span class="pl-k">++</span>) {
+  <span class="pl-en">console</span><span class="pl-c1">.log</span>(i); <span class="pl-c">//Will print from 0 to 9</span>
+}
+</pre></div>
+
+<p>-- for/in loop to loop through an array or object</p>
+
+<div class="highlight highlight-javascript"><pre>
+<span class="pl-k">for</span> (<span class="pl-k">var</span> x <span class="pl-k">in</span> array or object)  {
+
+}
+
+<span class="pl-c">//Looping through an array</span>
+<span class="pl-k">var</span> foo <span class="pl-k">=</span> [<span class="pl-c1">1</span>, <span class="pl-c1">2</span>, <span class="pl-c1">3</span>, <span class="pl-c1">4</span>, <span class="pl-c1">5</span>];
+
+<span class="pl-k">for</span> (<span class="pl-k">var</span> i <span class="pl-k">in</span> foo) {
+  <span class="pl-en">console</span><span class="pl-c1">.log</span>(foo[i]); <span class="pl-c">//Will loop the array and prints 1 to 5</span>
+}
+
+<span class="pl-c">//Looping through an object</span>
+<span class="pl-k">var</span> obj <span class="pl-k">=</span> [{ name <span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>gokul<span class="pl-pds">'</span></span>}, {name <span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>krishh<span class="pl-pds">'</span></span>}];
+
+<span class="pl-k">for</span> (<span class="pl-k">var</span> name <span class="pl-k">in</span> obj) { 
+
+  <span class="pl-c">//To check property belongs to object, not to prototype object</span>
+  <span class="pl-c">//hasOwnProperty is only to check objects</span>
+
+  <span class="pl-k">if</span> (obj.hasOwnProperty(name)) {
+    <span class="pl-en">console</span><span class="pl-c1">.log</span>(obj[name]); <span class="pl-c">//Will print {name: "gokul"}, {name: "krishh"}</span>
+  }
+
+}
+</pre></div>
+
+<p>-- while loop</p>
+
+<div class="highlight highlight-javascript"><pre><span class="pl-k">while</span> (statement <span class="pl-c1">1</span>) {
+
+}
+
+<span class="pl-c">//statement 1 - Condition to run the loop</span>
+<span class="pl-c">//See below for example</span>
+
+<span class="pl-k">var</span> i <span class="pl-k">=</span> <span class="pl-c1">0</span>;
+
+<span class="pl-k">while</span> (i <span class="pl-k">&lt;</span> <span class="pl-c1">10</span>) {
+  i<span class="pl-k">++</span>; <span class="pl-c">//Increment i</span>
+  <span class="pl-en">console</span><span class="pl-c1">.log</span>(i); <span class="pl-c">//Will print from 1 to 10</span>
+}
+</pre></div>
+
+<p>-- do/while loop will execute once, before checking the condition in while</p>
+
+<div class="highlight highlight-javascript"><pre><span class="pl-k">do</span> {
+  <span class="pl-c">//Execute once before checking while condition</span>
+} <span class="pl-k">while</span>(statement <span class="pl-c1">1</span>)
+
+<span class="pl-c">//statement 1 - Condition to run the loop</span>
+<span class="pl-c">//See below for example</span>
+
+<span class="pl-k">var</span> i <span class="pl-k">=</span> <span class="pl-c1">0</span>;
+
+<span class="pl-k">do</span> {
+  <span class="pl-en">console</span><span class="pl-c1">.log</span>(i); <span class="pl-c">//Will print from 0 to 10</span>
+  i<span class="pl-k">++</span>; <span class="pl-c">//Increment i</span>
+} <span class="pl-k">while</span> (i <span class="pl-k">&lt;</span> <span class="pl-c1">10</span>) 
+</pre></div>
+</li>
+</ul>
+
+<p><strong><a href="#table-of-contents">⬆ back to top</a></strong></p>
+
+<h2>
+<a id="prototypes" class="anchor" href="#prototypes" aria-hidden="true"><span class="octicon octicon-link"></span></a>prototypes</h2>
+
+<ul>
+<li>In javascript function, array, objects are considered as objects</li>
+<li>
+<p>All objects in js inherit, properties and methods from the prototype</p>
+
+<div class="highlight highlight-javascript"><pre><span class="pl-k">function</span> <span class="pl-en">person</span>(<span class="pl-smi">name</span>, <span class="pl-smi">age</span>) {
+  <span class="pl-v">this</span>.<span class="pl-c1">name</span> <span class="pl-k">=</span> name;
+  <span class="pl-v">this</span>.age  <span class="pl-k">=</span> age;
+  <span class="pl-en">console</span><span class="pl-c1">.log</span>(<span class="pl-v">this</span>.model);
+}
+
+<span class="pl-c1">person</span>.<span class="pl-c1">prototype</span>.<span class="pl-en">model</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">'</span>Car<span class="pl-pds">'</span></span>; <span class="pl-c">//Addind model to prototype</span>
+
+<span class="pl-k">var</span> newPerson <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-en">person</span>(<span class="pl-s"><span class="pl-pds">'</span>Gokul<span class="pl-pds">'</span></span>, <span class="pl-c1">23</span>);
+</pre></div>
+</li>
+</ul>
 
 <h1>
 <a id="more-contents-are-coming-soon" class="anchor" href="#more-contents-are-coming-soon" aria-hidden="true"><span class="octicon octicon-link"></span></a>More contents are coming soon</h1>
@@ -343,18 +489,26 @@ funz(); <span class="pl-c">//calling the function</span></pre></div>
 <a id="license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License</h2>
 
 <p>MIT</p>
-      </section>
-    </div>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Javascript Guidelines maintained by <a href="https://github.com/gokulkrishh">gokulkrishh</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/gokulkrishh/Javascript-Guidelines">Javascript Guidelines</a> is maintained by <a href="https://github.com/gokulkrishh">gokulkrishh</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
       </footer>
-    </div>
 
-    
+    </section>
+
+            <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-62413299-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
 
   </body>
 </html>
+
