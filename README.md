@@ -426,7 +426,7 @@
 ## prototypes
 
   - In javascript function, array, objects are considered as objects
-  
+
   - All objects in js inherit, properties and methods from the prototype
 
   ```javascript
@@ -446,7 +446,7 @@
 
 # Contribution
 
- If the contents above need to be improved or if you want to add more contents to it. Feel free to fork and give me pull request.
+ If the contents above need to be improved or if you want to add more content to it. Feel free to fork and give me pull request.
 
  Thanks!!
 
