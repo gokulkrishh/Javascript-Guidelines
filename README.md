@@ -9,8 +9,8 @@
 1. [Strings] (#strings)
 1. [Functions] (#functions)
 1. [Variables] (#variables)
-1. [Conditional Statements] (#conditional%20statements)
-1. [Comparison Operators] (#comparison%20operators)
+1. [Conditional Statements] (#conditional-statements)
+1. [Comparison Operators] (#comparison-operators)
 1. [Loops] (#loops)
 1. [Prototypes] (#prototypes)
 
