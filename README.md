@@ -73,6 +73,42 @@
 
       bar.name = 'Hello World'; //accessing object by its reference
     ```
+
+  - An example for primitive data type String
+
+
+    ```javascript
+      function stringFunz(str) {
+        str = 'bar';
+      }
+
+      var string = 'foo';
+      console.log(string); // "foo"
+
+      stringFunz(string);
+      console.log(string); // "foo"
+
+      //Above string still remain as `foo`
+    ```
+
+  - An example of how references work in javascript
+
+    ```javascript
+    function objectFunz(obj) {
+      obj.name = 'bar';
+    }
+
+    var obj = {}; //New object
+
+    obj.name = 'foo';
+    console.log(obj.name); // "foo"
+    
+    objectFunz(object);
+    console.log(obj.name); // "bar"
+
+    //See now the obj.name is changed to `bar` 
+    ```
+
 **[⬆ back to top](#table-of-contents)**
 
 ## arrays
@@ -246,7 +282,7 @@
     ```javascript
     (function () {
       alert('I am a function which is invoked automatically');
-    });
+    })();
     ```
 
 **[⬆ back to top](#table-of-contents)**
@@ -257,7 +293,7 @@
 
   ```javascript
   //bad
-  foo = 1; 
+  foo = 1; //Stores 1 as global variable
   
   //good
   var foo = 1; //assigns number 1 to the variable foo
