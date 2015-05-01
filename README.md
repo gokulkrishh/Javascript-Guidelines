@@ -88,7 +88,7 @@
       stringFunz(string);
       console.log(string); // "foo"
 
-      //Above string still remain as `foo`
+      //Above string still remains as `foo`
     ```
 
   - Now let's try it with a reference in object
@@ -152,7 +152,6 @@
   
   - Remove an item at start of an array  
     
-	<br>
 
     ```javascript
     var bar = [4, 1, 2];
@@ -161,9 +160,8 @@
     console.log(bar); //print [1, 2]
     ```
 
-    - Remove an item at the end of an array
+  - Remove an item at the end of an array
 
-	<br>
 
     ```javascript
     var bar = [2, 1, 5];
