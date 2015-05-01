@@ -165,7 +165,7 @@
 
     ```javascript
     var bar = [2, 1, 5];
-    bar.pop(); //removes 2 from the end
+    bar.pop(); //removes 5 from the end
 
     console.log(bar); //print [2, 1]
     ```
