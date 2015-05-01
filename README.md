@@ -20,7 +20,9 @@
   - **comments**: In javascript there are 2 types of comments
 
     + `Single line comment`
+
     + `Multi line comment`
+    
 
     ```javascript
     //this is a single line comment
@@ -36,11 +38,15 @@
   - **Primitive data types**: 
 
     +  `number`
+
     +  `string`
+
     +  `boolean (true or false)`
+
     +  `undefined`
+
     +  `null`
-	<br>
+
 
     ```javascript
       var foo = 1; //number
@@ -52,7 +58,9 @@
   - **Other datatypes**: such as object, array are accessed by its reference
 
     + `object`
+
     + `array`
+
 
     ```javascript
       var foo = [1, 'hello']; //array
@@ -98,7 +106,7 @@
 
     - Add a new item at start of an array
     <br>
-    
+
     ```javascript
     var bar = [1];
     bar.unshift(2); //adds 2 before 1
@@ -233,6 +241,7 @@
   - Immediately invoked function express (IIFE)
 
     - below function is called automatically
+    <br>
 
     ```javascript
     (function () {
@@ -417,6 +426,7 @@
 ## prototypes
 
   - In javascript function, array, objects are considered as objects
+  
   - All objects in js inherit, properties and methods from the prototype
 
   ```javascript
@@ -436,9 +446,14 @@
 
 # Contribution
 
- If contents above need to be improved or if you want to add more content. Feel free to give me pull request.
+ If the contents above need to be improved or if you want to add more contents to it. Feel free to fork and give me pull request.
 
  Thanks!!
+
+
+## Author
+
+[![Gokulakrishnan](https://avatars0.githubusercontent.com/u/2944237?v=3&s=72)](https://github.com/gokulkrishh)
 
 
 License
