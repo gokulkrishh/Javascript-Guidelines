@@ -470,8 +470,6 @@
   function person(name, age) {
     this.name = name;
     this.age  = age;
-
-    return this.model;
   }
   
   person.prototype.model = 'Car';
