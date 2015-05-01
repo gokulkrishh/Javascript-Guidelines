@@ -470,12 +470,17 @@
   function person(name, age) {
     this.name = name;
     this.age  = age;
-    console.log(this.model);
+
+    return this.model;
   }
   
-  person.prototype.model = 'Car'; //Addind model to prototype
+  person.prototype.model = 'Car';
 
-  var newPerson = new person('Gokul', 23);
+  //model `car` is added to the person() from its prototype
+
+  var newPerson = new person('Gokul', 23); //calling the person()
+
+  console.log(newPerson); //Will print {name: "Gokul", age: 23, model: "Car"}
 
   ```
 
