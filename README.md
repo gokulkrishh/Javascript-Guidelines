@@ -74,7 +74,7 @@
       bar.name = 'Hello World'; //accessing object by its reference
     ```
 
-  - An example for primitive data type String
+  - An example for String
 
 
     ```javascript
@@ -91,7 +91,7 @@
       //Above string still remain as `foo`
     ```
 
-  - An example of how references work in javascript
+  - Now let's try it with a reference in object
 
     ```javascript
     function objectFunz(obj) {
@@ -150,22 +150,24 @@
     console.log(bar); //print [2, 1]
     ```
   
-    - Remove an item at the end of an array
+  - Remove an item at start of an array  
+    
 	<br>
 
     ```javascript
-    var bar = [2, 1, 2];
-    bar.shift(2); //removes 2 from the start
+    var bar = [4, 1, 2];
+    bar.shift(); //removes 4 from the start
 
     console.log(bar); //print [1, 2]
     ```
 
-    - Remove an item at start of an array
+    - Remove an item at the end of an array
+
 	<br>
 
     ```javascript
-    var bar = [2, 1, 2];
-    bar.pop(2); //removes 2 from the end
+    var bar = [2, 1, 5];
+    bar.pop(); //removes 2 from the end
 
     console.log(bar); //print [2, 1]
     ```
@@ -299,7 +301,7 @@
   var foo = 1; //assigns number 1 to the variable foo
   ```
 
-  - local and global variables in functions
+  - Local and Global variables
   
   ```javascript
   //global
@@ -313,9 +315,10 @@
     foo = 10; //changing the global variable value 1 to 10
   }
 
+  funz(); //calling the function
+
   alert(foo); //will alert 10
 
-  funz(); //calling the function
   ```
 
 **[⬆ back to top](#table-of-contents)**
@@ -355,7 +358,7 @@
   
   console.log(foo == 1); //True, because `==` will do automatic type conversion
 
-  console.log(bar === 1); //False, because 1 === '1'
+  console.log(bar === 1); //False, because 1 !== '1'
 
   console.log(bar === '1'); //True
 
@@ -402,7 +405,7 @@
   }
   
   //Looping through an object
-  var obj = [{ name : 'gokul'}, {name : 'krishh'}];
+  var obj = { fname : 'gokul', lname : 'krishh'};
 
   for (var name in obj) { 
 
@@ -410,7 +413,7 @@
     //hasOwnProperty is only to check objects
     
     if (obj.hasOwnProperty(name)) {
-      console.log(obj[name]); //Will print {name: "gokul"}, {name: "krishh"}
+      console.log(obj[name]); //Will print "gokul" and "krishh"
     }
 
   }
