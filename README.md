@@ -1,5 +1,7 @@
 # Javascript Basics & Guidelines
 
+*A simple approach to follow while writing javascript*
+
 ## Table of contents
 
 1. [Comments] (#comments)
